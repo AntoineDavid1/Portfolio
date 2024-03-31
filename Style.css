@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(pink,blue); /* Dégradé de couleurs */
+}
+
+.header_menu{
+    gap: 27em;
+    list-style: none;
+    
+}
+
+.header.fixed-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Assure que la barre de navigation reste au-dessus du contenu */
+}
+
+#presentation{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 450px;
+    margin-bottom: 150px;
+}
+
+#presentation h1{
+    font-size: 10em;
+    color: mediumvioletred;
+}
+
+#presentation h2{
+    color: mediumvioletred;
+}
+
+#presentation p{
+    color: #F0F0F0;
+}
+
+#competences{
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+#competences h2, h3{
+    color: crimson;
+}
+
+#competences p,li{
+    color: #CCCCCC;
+}
+
+#competences strong{
+    color: crimson;
+}
+
+#projets{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 450px;
+    margin-bottom: 150px;
+    justify-content: space-between;
+}
+
+#projets h1{
+    font-size: 6em;
+    color: crimson;
+}
+#projets h3{
+    color: #F0F0F0;
+}
+#projets h2{
+    font-size: 4em;
+    color: #CCCCCC;
+    margin-left: 11px;
+    margin-top: 65px;
+}
+#contact{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 450px;
+    margin-bottom: 150px;
+}
+
+#contact h1{
+    color: crimson;
+}

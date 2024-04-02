@@ -2,11 +2,6 @@ body {
     background: linear-gradient(pink,blue); /* Dégradé de couleurs */
 }
 
-.header_menu{
-    gap: 27em;
-    list-style: none;
-}
-
 #presentation{
     text-align: center;
     margin-top: 50px;
@@ -76,9 +71,6 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .header {
-        display: none;
-    }
 
     #presentation{
     text-align: center;

@@ -5,12 +5,6 @@ body {
 .header_menu{
     gap: 27em;
     list-style: none;
-    
-}
-@media only screen and (max-width: 600px) {
-    .header_menu {
-        gap: 2em; /* Valeur pour les téléphones */
-    }
 }
 .header.fixed-top {
     position: fixed;
@@ -86,4 +80,53 @@ body {
 
 #contact h1{
     color: crimson;
+}
+
+@media only screen and (max-width: 600px) {
+    .header_menu {
+        gap: 2em; /* Valeur pour les téléphones */
+    }
+
+    #presentation{
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    }
+
+    #presentation h1{
+        font-size: 4em;
+        
+    }
+
+    #competences{
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    #competences img{
+        margin-left: 50px;
+    }
+    #projets{
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+        justify-content: space-between;
+    }
+
+    #projets h1{
+        font-size: 3em;
+        color: crimson;
+    }
+
+    #projets h2{
+        font-size: 1em;
+        margin-left: 11px;
+        margin-top: 10px;
+    }
+    #contact{
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
 }

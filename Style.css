@@ -7,7 +7,11 @@ body {
     list-style: none;
     
 }
-
+@media only screen and (max-width: 600px) {
+    .header_menu {
+        gap: 2em; /* Valeur pour les téléphones */
+    }
+}
 .header.fixed-top {
     position: fixed;
     width: 100%;

@@ -6,13 +6,6 @@ body {
     gap: 27em;
     list-style: none;
 }
-.header.fixed-top {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Assure que la barre de navigation reste au-dessus du contenu */
-}
 
 #presentation{
     text-align: center;
@@ -83,8 +76,8 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .header_menu {
-        gap: 2em; /* Valeur pour les téléphones */
+    .header {
+        display: none;
     }
 
     #presentation{
@@ -100,7 +93,7 @@ body {
     }
 
     #competences{
-        margin-left: 0px;
+        margin-left: 5px;
         margin-bottom: 0px;
     }
 

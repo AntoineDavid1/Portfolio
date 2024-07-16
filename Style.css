@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(pink,blue); /* Dégradé de couleurs */
+    width: 1800px;
 }
 
 #presentation{
@@ -12,6 +13,7 @@ body {
 #presentation h1{
     font-size: 10em;
     color: mediumvioletred;
+    width: 1000px;
 }
 
 #presentation h2{
@@ -34,14 +36,15 @@ body {
     color: #CCCCCC;
 }
 
-#competences strong{
+strong{
     color: crimson;
 }
 
 #projets{
     text-align: center;
     margin-top: 50px;
-    margin-left: 450px;
+    display: flex;
+    margin-left: 500px;
     margin-bottom: 150px;
     justify-content: space-between;
 }

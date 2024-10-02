@@ -74,6 +74,9 @@ strong{
 }
 
 @media only screen and (max-width: 600px) {
+    body{
+        width: auto;
+    }
 
     #presentation{
     text-align: center;
@@ -83,8 +86,12 @@ strong{
     }
 
     #presentation h1{
-        font-size: 3em;
-        
+        font-size: 2em;
+        width: 500px;
+    }
+
+    #presentation #sujet{
+        width: 500px;
     }
 
     #competences{

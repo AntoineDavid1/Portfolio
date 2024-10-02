@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: white;
+    position: fixed; /* Fixe la navbar en haut */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pour être sûr que la navbar soit au-dessus du reste */
+}
+
+.logo_title, .navbar ul li a {
+    color: #1a202c;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li a {
+    padding: 12px;
+    margin: 0 6px;
+}
+
+.navbar ul li a:hover {
+    color: white;
+    background-color: #1a202c;
+    border-radius: 4px;
+}
+
+
+.parallax{
+    background-image: url('img/code.webp');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%; /* L'image commence zoomée */
+    animation: zoomOutEffect 5s ease-in-out forwards; /* Animation pour dézoomer */
+    text-align: center;
+    color: wheat;
+    position: relative; /* Nécessaire pour positionner le texte */
+}
+
+/* Animation zoom-dézoom */
+@keyframes zoomOutEffect {
+    0% {
+        background-size: 150%; /* Image zoomée au début */
+    }
+    100% {
+        background-size: 100%; /* Taille normale à la fin */
+    }
+}
+
+/* Texte centré dans l'image */
+.centered-text {
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste pour vraiment centrer */
+    text-align: center;
+    color: white; /* Couleur du texte */
+}
+
+.centered-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.centered-text p {
+    font-size: 24px;
+}
+.content {
+    padding: 50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.parallax h1 {
+    top: 50%;
+    left: 50%;
+}
+
+.parallax p {
+    font-size: 18px;
+    line-height: 1.6;
+}

@@ -103,3 +103,84 @@ a {
     font-size: 18px;
     line-height: 1.6;
 }
+
+/* Icône pour défiler vers le bas */
+.scroll-down {
+    position: absolute;
+    bottom: -400px; /* Place l'icône à 20px du bas de la section */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Centre parfaitement l'icône */
+    font-size: 32px;
+    color: #1a202c;
+    cursor: pointer;
+    animation: bounce 2s infinite; /* Animation pour faire rebondir l'icône */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0); /* L'icône revient à sa position initiale */
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px); /* L'icône monte légèrement */
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px); /* L'icône monte légèrement moins */
+    }
+}
+
+.content2 {
+    padding: 50px;
+    background-color: #EDF2F7;
+    text-align: center;
+    color: #1a202c;
+}
+.content2 .competance{
+    margin-left: 300px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.content3 {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+    color: #1a202c;
+    font-size: xx-large;
+}
+.content3 a{
+    color: #1a202c;
+}
+.content3 a:hover{
+    color: #1a202c;
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.footer .contact{
+    margin-left: 250px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.footer a{
+    color: white
+}
+
+.footer a:hover{
+    color: antiquewhite;
+}
+
+.footer-cta {
+    border-bottom: 1px solid #373636;
+}
+
+.copyrate{
+    margin-left: 400px;
+}
+
+
+
+
+

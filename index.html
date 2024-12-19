@@ -3,39 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Ajout des liens vers les fichiers CSS de Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!--<link rel="icon" href="image/logo_site.png" type="image/x-icon">-->
     <!-- Ajout des liens vers les fichiers JavaScript de Bootstrap (optionnel, mais nécessaire pour certaines fonctionnalités) -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio David</title>
 </head>
 <body>
-<main class="">
-    <section id="presentation">
-        <div class="row">
-            <div class="col-md-8">
-                <h2>Bonjour, Je suis David</h2>
-                <h1>Étudiant BUT <br> Informatique 3ème année</h1>
+    <nav class="navbar" id="navbar">
+        <a href="./index.html">
+            <h1 class="logo_title"> PORTFOLIO David  Antoine</h1>
+        </a>
+        <ul>
+            <li><a href="./index.html">Acceuil</a></li>
+            <li><a href="mailto:antoine.david110@gmail.com">Contact</a></li>
+            <li><a href="pdf/web DEVELOPER.pdf">Mon CV</a></li>
+        </ul> 
+    </nav>
+    <section class="parallax" >
+        <div class="centered-text">
+            <h2>Bonjour, Je suis David  Antoine</h2>
+                <h1>Étudiant 3ème année BUT Informatique</h1>
                 <div id="sujet">
-                <p>à l’université Sorbonne Paris Nord.
-                    Toute ma vie,<br> j’ai été passionné par l'environnement de <strong> l’informatique </strong>, 
-                    mais c’est en classe de <strong> première STI2D </strong> que j’ai décidé de faire de l’informatique mon avenir en commençant à apprendre quelques bases en <strong> HTML et CSS</strong> pour des projets personnels
-                    mais aussi de <strong> l’arduino </strong> pour des devoirs au lycée, 
-                    c’est pourquoi en 2021 j’ai choisi de rejoindre ma formation actuelle. 
-                    <strong> J’aime confectionner des projets </strong> et voir le résultat en direct et c’est ce que ma formation me pose faire à travers des projet universitaire appeler <strong> SAE.</strong></p>
-                    
-                <p>Explorez mon ePortfolio et plongez dans mon voyage passionnant en tant qu'étudiant en informatique, où j'ai acquis des compétences solides lors de ma première année d'études.</p>
-                </div>
-                <a class="btn btn-outline-danger" href="#contact">Contactez-moi</a>
-            </div>
+                    <p>à l’université Sorbonne Paris Nord.</p>
+                
         </div>
+        <div class="scroll-down">
+            <p>Explorez mon ePortfolio.</p>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        </section>
+
+     <!-- Section avec du contenu normal -->
+     <section class="content">
+        <img src="img/carte-chronologique.PNG" alt="">
     </section>
-    <section id="competences">
-        <div class="row">
+
+    <section class="content2">
+        <div class="competance row">
             <div class="col-md-6">
-                <h2>Compétence</h2>
+                <h2 class="titre">Compétence</h2>
                 <p>j'ai acquis les compétences nécessaires pour <strong> réaliser le développement
                     d'une application </strong> en utilisant des langages de programmation tels que <strong> Java et Python.</strong>
                 </p>
@@ -49,58 +59,102 @@
                     atteindre les objectifs communs.
                 </p>
                 <hr>
-                <h3 class="">Langages de programmation acquis</h3>
+                <h3 class="titre">Skils</h3>
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="langages">
-                            <li>HTML/PHP</li>
+                            <label><strong>front-end</strong></label>
+                            <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
+                            <li>JQUERY</li>
+                            <li>Node.js</li>
+                        </ul>
+                        <ul class="langages">
+                            <label><strong>back-end</strong></label>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>PHP</li>
+                            <li>JUNIT</li> 
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <ul class="langages">
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>SQL</li> 
+                            <label><strong>Outils technique</strong></label>
+                            <li>GIT</li>
+                            <li>VS code</li>
+                            <li>Éclipse</li>
+                            <li>Linux</li> 
+                        </ul>
+                        <ul class="langages">
+                            <label><strong>Base de données</strong></label>
+                            <li>SQL</li>
+                            <li>PSQL</li>
+                            <li>NoSQL</li>
+                            <li>MongoDB</li> 
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="image/comp.png" alt="" width="400px">
+                <img src="img/comp.png" alt="" width="400px">
             </div>
         </div>
     </section>
-    <section id="projets">
-        <div class="row">
-            <div class="col-md-8">
-                <h1 class="hero__title">Les Projets</h1>
-                <h3 class="hero__subtitle">Voici les projets que j'ai réalisé depuis ma 1ère année de BUT informatique.</h3>
-                <h2 class="about__title">1) Gestion de base de données</h2>
-                <a class="btn btn-danger" target="_blank" href="https://github.com/AntoineDavid1/premier-projet2/tree/main/sae204">Lien Github</a>
-                <h2 class="about__title">2) Étude d'une entreprise</h2>
-                <a class="btn btn-danger" target="_blank" href="PDF/SAE_Eco.pdf">PDF</a>
-                <h2 class="about__title">3) Gestion d'une société Python</h2>
-                <a class="btn btn-danger" target="_blank" href="https://github.com/AntoineDavid1/premier-projet2/tree/main/SAE%20python">Lien Github</a>
-                <h2 class="about__title">4) Cryptographie</h2>
-                <a class="btn btn-danger" target="_blank" href="https://github.com/AntoineDavid1/premier-projet2/tree/main/RSA">Lien Github</a>
-                <h2 class="about__title">5) Développement d’une application web</h2>
-                <a class="btn btn-danger" target="_blank" href="https://jupyter.univ-paris13.fr/~12213097/">Site web</a>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="row">
-            <div class="col-md-8">
-            <h1>Contactez-moi</h1>
-            <a class="btn btn-danger" href="mailto:antoine.david110@gmail.com">E-Mail</a>
-            </div>
-        </div>
-    </section>
-</main>
 
-<!-- Ajout des liens vers les fichiers JavaScript de Bootstrap (optionnel, mais nécessaire pour certaines fonctionnalités) -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <section class="content3">
+        <h2>Projet personnelle</h2>
+        <div class="projet row">
+            <div class="col-md-4">
+                <a href="https://github.com/AntoineDavid1/premier-projet2/tree/main/sae204"><i class="fas fa-database"></i>
+                <p><strong>Gestion de base de données</strong></p></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://github.com/AntoineDavid1/premier-projet2/tree/main/RSA"><i class="fas fa-lock"></i>
+                <p><strong>Cryptographie</strong></p></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://jupyter.univ-paris13.fr/~12213097/"><i class="fas fa-globe"></i>
+                <p><strong>Développement d’une application web</strong></p></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta">
+                    <div class="row contact">
+                        <div class="col-4">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Téléphone</h4>
+                                    <span><a href="tel:07 69 44 34 53">07 69 44 34 53</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Email</h4>
+                                    <span><a href="mailto:antoine.david110@gmail.com">antoine.david110@gmail.com</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Linkedin</h4>
+                                    <a href="https://www.linkedin.com/in/david-antoine110"><span>www.linkedin.com/in/david-antoine110</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="copyrate">© David Antoine 2024 - Tous droits réservés</p>
+                </div>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>

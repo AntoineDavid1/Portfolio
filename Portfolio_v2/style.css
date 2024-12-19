@@ -23,6 +23,7 @@ a {
     top: 0;
     width: 100%;
     z-index: 1000; /* Pour être sûr que la navbar soit au-dessus du reste */
+    display: none;
 }
 
 .logo_title, .navbar ul li a {
@@ -107,7 +108,7 @@ a {
 /* Icône pour défiler vers le bas */
 .scroll-down {
     position: absolute;
-    bottom: -400px; /* Place l'icône à 20px du bas de la section */
+    bottom: -20px; /* Place l'icône à 20px du bas de la section */
     left: 50%; /* Centre horizontalement */
     transform: translateX(-50%); /* Centre parfaitement l'icône */
     font-size: 32px;

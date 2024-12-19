@@ -1,128 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: linear-gradient(pink,blue); /* Dégradé de couleurs */
-    width: 1800px;
+    font-family: 'Roboto', sans-serif;
 }
 
-#presentation{
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: white;
+    position: fixed; /* Fixe la navbar en haut */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pour être sûr que la navbar soit au-dessus du reste */
+    opacity: 0;
+    visibility: hidden;
+  
+    /* Transition fluide de 0.3s sur opacity et visibility */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.navbar.visible {
+    /* Rendre l'élément visible */
+    opacity: 1;
+    visibility: visible;
+  }
+
+.logo_title, .navbar ul li a {
+    color: #1a202c;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li a {
+    padding: 12px;
+    margin: 0 6px;
+}
+
+.navbar ul li a:hover {
+    color: white;
+    background-color: #1a202c;
+    border-radius: 4px;
+}
+
+
+.parallax{
+    background-image: url('img/code.webp');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%; /* L'image commence zoomée */
+    animation: zoomOutEffect 5s ease-in-out forwards; /* Animation pour dézoomer */
     text-align: center;
-    margin-top: 50px;
-    margin-left: 450px;
-    margin-bottom: 150px;
+    color: wheat;
+    position: relative; /* Nécessaire pour positionner le texte */
 }
 
-#presentation h1{
-    font-size: 10em;
-    color: mediumvioletred;
-    width: 1000px;
+/* Animation zoom-dézoom */
+@keyframes zoomOutEffect {
+    0% {
+        background-size: 150%; /* Image zoomée au début */
+    }
+    100% {
+        background-size: 100%; /* Taille normale à la fin */
+    }
 }
 
-#presentation h2{
-    color: mediumvioletred;
+/* Texte centré dans l'image */
+.centered-text {
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste pour vraiment centrer */
+    text-align: center;
+    color: white; /* Couleur du texte */
 }
 
-#presentation p{
-    color: #F0F0F0;
+.centered-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-#competences{
+.centered-text p {
+    font-size: 24px;
+}
+.content {
+    padding: 50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.parallax h1 {
+    top: 50%;
+    left: 50%;
+}
+
+.parallax p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Icône pour défiler vers le bas */
+.scroll-down {
+    position: absolute;
+    bottom: -450px; /* Place l'icône à 20px du bas de la section */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Centre parfaitement l'icône */
+    font-size: 32px;
+    color: #1a202c;
+    cursor: pointer;
+    animation: bounce 2s infinite; /* Animation pour faire rebondir l'icône */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0); /* L'icône revient à sa position initiale */
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px); /* L'icône monte légèrement */
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px); /* L'icône monte légèrement moins */
+    }
+}
+
+.content2 {
+    padding: 50px;
+    background-color: #EDF2F7;
+    text-align: center;
+    color: #1a202c;
+}
+.content2 .competance{
     margin-left: 300px;
     margin-bottom: 50px;
+    text-align: justify;
 }
-#competences h2, h3{
-    color: crimson;
+.content2 .competance ul{
+    list-style-type: none;
 }
-
-#competences p,li{
-    color: #CCCCCC;
-}
-
-strong{
-    color: crimson;
-}
-
-#projets{
+.content3 {
+    padding: 50px;
+    background-color: white;
     text-align: center;
-    margin-top: 50px;
-    display: flex;
-    margin-left: 500px;
-    margin-bottom: 150px;
-    justify-content: space-between;
+    color: #1a202c;
+    font-size: xx-large;
+}
+.content3 a{
+    color: #1a202c;
+}
+.content3 a:hover{
+    color: #1a202c;
+}
+.footer{
+    background-color: black;
+    color: white;
 }
 
-#projets h1{
-    font-size: 6em;
-    color: crimson;
-}
-#projets h3{
-    color: #F0F0F0;
-}
-#projets h2{
-    font-size: 4em;
-    color: #CCCCCC;
-    margin-left: 11px;
-    margin-top: 65px;
-}
-#contact{
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 450px;
-    margin-bottom: 50px;
+.footer .contact{
+    margin-left: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-#contact h1{
-    color: crimson;
+.footer a{
+    color: white
 }
+
+.footer a:hover{
+    color: antiquewhite;
+}
+
+.footer-cta {
+    border-bottom: 1px solid #373636;
+}
+
+.copyrate{
+    margin-left: 400px;
+}
+
 
 @media only screen and (max-width: 600px) {
-    body{
-        width: auto;
+    .parallax{
+        background-image: url('img/code.webp');
+        background-size: cover;
+        animation: none; /* Animation annuler */
+        text-align: center;
+        color: wheat;
+        position: relative; 
     }
-
-    #presentation{
-    text-align: center;
-    margin-top: 5px;
-    margin-left: 0px;
-    margin-bottom: 25px;
+    .parallax h1{
+        font-size: medium;
     }
-
-    #presentation h1{
-        font-size: 2em;
-        width: 500px;
+    .scroll-down{
+        display: none;
     }
-
-    #presentation #sujet{
-        width: 500px;
+    .navbar{
+        z-index: 0;
+        display: none;
     }
-
-    #competences{
-        margin-left: 5px;
+    .content {
+        background-color: black;
+        text-align: center;
+        color: white;
+    }
+    .content img{
+        width: 400px;
+    }
+    .content2{
+        padding: 0px;
+    }
+    .content2 .competance{
+        width: 560px;
+    }
+    .content2 img{
+        display: none;
+    }
+    .content2 h2 h3{
+        text-align: center;
+    }
+    .content2 .competance{
+        margin-left: 0px;
+        margin-bottom: 50px;
+        text-align: justify;
+        font-size: x-small;
+    }
+    .content2 .competance .titre{
+        text-align:center
+    }
+    .footer .contact{
+        margin-left: 0px;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        font-size: x-small;
+    }
+    .footer .copyrate{
+        margin-left: 120px;
         margin-bottom: 0px;
     }
+}
 
-    #competences img{
-        width: 350px;
-        margin-left: 10px;
-    }
-    #projets{
-        margin-top: 5px;
-        margin-left: 0px;
-        margin-bottom: 5px;
-        justify-content: space-between;
-    }
-
-    #projets h1{
-        font-size: 3em;
-        color: crimson;
-    }
-
-    #projets h2{
-        font-size: 1em;
-        margin-left: 11px;
-        margin-top: 10px;
-    }
-    #contact{
-        margin-top: 10px;
-        margin-left: 0px;
-        margin-bottom: 5px;
+@media only screen and (max-width: 1600px){
+    .scroll-down {
+        position: absolute;
+        bottom: -250px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        font-size: 32px;
+        color: #1a202c;
+        cursor: pointer;
+        animation: bounce 2s infinite;
     }
 }

@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(pink,blue); /* Dégradé de couleurs */
+    width: 1800px;
+}
+
+#presentation{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 450px;
+    margin-bottom: 150px;
+}
+
+#presentation h1{
+    font-size: 10em;
+    color: mediumvioletred;
+    width: 1000px;
+}
+
+#presentation h2{
+    color: mediumvioletred;
+}
+
+#presentation p{
+    color: #F0F0F0;
+}
+
+#competences{
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+#competences h2, h3{
+    color: crimson;
+}
+
+#competences p,li{
+    color: #CCCCCC;
+}
+
+strong{
+    color: crimson;
+}
+
+#projets{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 500px;
+    margin-bottom: 150px;
+    justify-content: space-between;
+}
+
+#projets h1{
+    font-size: 6em;
+    color: crimson;
+}
+#projets h3{
+    color: #F0F0F0;
+}
+#projets h2{
+    font-size: 4em;
+    color: #CCCCCC;
+    margin-left: 11px;
+    margin-top: 65px;
+}
+#contact{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 450px;
+    margin-bottom: 50px;
+}
+
+#contact h1{
+    color: crimson;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        width: auto;
+    }
+
+    #presentation{
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    }
+
+    #presentation h1{
+        font-size: 2em;
+        width: 500px;
+    }
+
+    #presentation #sujet{
+        width: 500px;
+    }
+
+    #competences{
+        margin-left: 5px;
+        margin-bottom: 0px;
+    }
+
+    #competences img{
+        width: 350px;
+        margin-left: 10px;
+    }
+    #projets{
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+        justify-content: space-between;
+    }
+
+    #projets h1{
+        font-size: 3em;
+        color: crimson;
+    }
+
+    #projets h2{
+        font-size: 1em;
+        margin-left: 11px;
+        margin-top: 10px;
+    }
+    #contact{
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+}

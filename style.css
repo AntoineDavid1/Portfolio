@@ -69,6 +69,23 @@ a {
     position: relative; /* Nécessaire pour positionner le texte */
 }
 
+.carousel-indicators {
+    bottom: -30px; /* Ajuste cette valeur pour descendre les indicateurs */
+}
+
+.carousel-indicators li {
+    background-color: #000; /* Change la couleur si nécessaire */
+    width: 10px; /* Ajuste la taille */
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Transforme l'icône blanche en noire */
+}
+
+
 /* Animation zoom-dézoom */
 @keyframes zoomOutEffect {
     0% {

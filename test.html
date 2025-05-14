@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diaporama Projets</title>
+    <!-- Lien vers le CSS de Swiper.js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content3 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content3 h2 {
+            margin-bottom: 20px;
+        }
+
+        .swiper {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .swiper-slide i {
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .swiper-slide a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .swiper-slide a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<section class="content3">
+    <h2>Projet personnel</h2>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="https://github.com/AntoineDavid1/premier-projet2/tree/main/sae204">
+                    <i class="fas fa-database"></i>
+                    <p><strong>Gestion de base de données</strong></p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://github.com/AntoineDavid1/premier-projet2/tree/main/RSA">
+                    <i class="fas fa-lock"></i>
+                    <p><strong>Cryptographie</strong></p>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://jupyter.univ-paris13.fr/~12213097/">
+                    <i class="fas fa-globe"></i>
+                    <p><strong>Développement d’une application web</strong></p>
+                </a>
+            </div>
+        </div>
+        <!-- Flèches de navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- Lien vers le JS de Swiper.js -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true, // Le carrousel boucle en continu
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+<!-- Lien vers les icônes Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

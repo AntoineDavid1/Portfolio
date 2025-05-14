@@ -10,4 +10,24 @@ window.addEventListener('scroll', function() {
         scrollElement.classList.remove('visible');
       }
     });
+
+    const swiper = new Swiper('.swiper', {
+      loop: true, // Le carrousel boucle en continu
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+  });
+
+document.getElementById("scrol").addEventListener(click, ()=>{
+  const target = document.getElementById('carteChronologique');
+    if (target) {
+        console.log("scrolle activé");
+        target.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    }
+})
   
